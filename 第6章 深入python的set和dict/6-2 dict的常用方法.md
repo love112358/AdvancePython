@@ -12,7 +12,8 @@ print(a)
 - 浅copy和深copy
 
 - fromkeys
-
+new_list = ["bobby1",'bobby2']
+mew_dict = dicet.fromkeys(new_list,{"company":"imooc"})
 首先这是一个静态方法, 可以直接使用类名调用
 ```
 @staticmethod # known case
@@ -36,7 +37,8 @@ print(a.get("person",{}))
 ```
 
 - items, keys, values
-
+for key,value in new_dict.items():
+    print(key)
 取值
 
 - pop，popitem
@@ -46,9 +48,9 @@ print(a.get("person",{}))
 - setdefault
 
 如果key存在使用get方法, 如果key不存在使用set方法
+default_value=new_dict.setdefault("bobby","imooc")
 
 - update
-
 两个字典合并
 ```
 a={"person1":{"Andy":30},"person12":{"Lady":45}}
