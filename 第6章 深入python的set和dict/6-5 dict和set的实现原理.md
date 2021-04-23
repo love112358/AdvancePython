@@ -1,3 +1,4 @@
+##advancepython_resource 项目
 ## 效率
 - dict查找的性能远远大于list
 - 在list中查找元素时间会随着list的增大而增大
