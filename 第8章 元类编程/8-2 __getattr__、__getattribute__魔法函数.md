@@ -26,11 +26,19 @@ print(a.age)
 
 ### \_\_getattribute__
 执行查找, 无条件进入该魔法函数, 即使所查找的属性不存在
+```
+###
+class User:
+    def __init__(self,info ={}):
+        self.info = info
+    def __getattr__(self,item):
+        return self.info[item]
+   # def __getattribute__(self,item):
+    #    return "bobby
+if __name__=="__main__":
+    user = User(info={"company_name":"imooc","name":bobby})
 
-
-
-
-
+```
 
 
 
