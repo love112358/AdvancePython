@@ -56,9 +56,28 @@ print(caller_frame.f_code.co_name)
 - 生成器可以在任何时候、任何函数中恢复运行，因为它的栈帧并不在真正的栈中，而是堆中
 - f_lasti指向“最后执行指令”的指针。初始化为 -1，意味着它没开始运行
 
+```
 
 
-
+def gen_func():
+    yield 1
+    name ="bobby"
+    yield 2
+    age =30
+    return "imooc"
+import dis
+gen = gen_func()
+print(dis.dis(gen))
+print(gen.gi_frame.f_lasti)
+print(gen.gi_frame.f_locals)
+next(gen)
+print(gen.gi_frame.f_lasti)
+print(gen.gi_frame.f_locals)
+next(gen)
+print(gen.gi_frame.f_lasti)
+print(gen.gi_frame.f_locals)
+next(gen)
+```
 
 
 
