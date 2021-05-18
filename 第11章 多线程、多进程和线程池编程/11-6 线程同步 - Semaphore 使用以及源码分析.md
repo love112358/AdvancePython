@@ -1,3 +1,4 @@
+```
 # semaphore 是用于控制进入数量的锁
 #文件。读写，写一般只是用于一个协程写，读可以允许有多个
 #做爬虫，
@@ -31,3 +32,4 @@ if __name__=='__main__':
     url_producer = UrlProducer(sem)
     url_producer.start()
     #查看queue中的condition
+    ```
