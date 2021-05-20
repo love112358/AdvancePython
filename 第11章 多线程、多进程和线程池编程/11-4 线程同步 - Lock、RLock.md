@@ -1,3 +1,4 @@
+```
 from threading import Lock,RLock # 可重入的锁
 total = 0
 lock =Lock()
